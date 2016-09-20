@@ -376,27 +376,29 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: Helvetica, Arial, sans-serif; }
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #ff1f7d; }
 
 div.container {
   width: 100%;
   height: 100%;
-  background: transparent url("../images/bg2.jpg") center center no-repeat;
-  background-size: cover;
+  background: transparent url("../images/web-complete.jpg") center center no-repeat;
+  background-size: contain;
   display: flex;
   flex-direction: column;
   position: relative; }
   div.container .mail {
-    display: flex;
+    display: block;
+    position: absolute;
     width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center; }
+    height: 100%; }
     div.container .mail a {
       display: block;
-      padding-bottom: 80px; }
+      border: 1px solid red; }
+      div.container .mail a img {
+        display: none; }
   div.container .copy {
-    display: flex;
+    display: none;
     align-self: flex-end;
     align-items: flex-end;
     flex-grow: 1;
@@ -405,6 +407,7 @@ div.container {
     font-size: 16px;
     font-weight: bold; }
   div.container .footer {
+    display: none;
     width: 100%;
     background-color: #ff1f7d;
     align-self: flex-end;
@@ -419,20 +422,27 @@ div.container {
 /** MOBILE CLASS */
 /**------------------------------------------------------------------------------- */
 @media (max-width: 768px) {
+  body {
+    background-color: #ff2c7d; }
   div.container {
-    background: transparent url("../images/bg-mobile.jpg") center center no-repeat;
-    background-size: cover; }
+    background: transparent url("../images/mobile-complete.jpg") center top no-repeat;
+    background-size: contain; }
     div.container .mail {
-      max-width: 100%; }
+      max-width: 100%;
+      display: block;
+      position: absolute; }
       div.container .mail a {
-        max-width: 90%;
+        max-width: 100%;
         padding-bottom: 0;
-        margin-top: -55%; }
+        height: 30%; }
         div.container .mail a img {
+          visibility: hidden;
           max-width: 100%; }
     div.container .copy {
+      display: none;
       font-size: 12px;
       padding-right: 10px; }
     div.container .footer {
+      display: none;
       font-size: 12px;
       padding: 10px; } }
