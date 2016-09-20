@@ -394,7 +394,10 @@ div.container {
     height: 100%; }
     div.container .mail a {
       display: block;
-      height: 50%; }
+      width: 35%;
+      margin-left: calc(50% - 17%);
+      height: 20%;
+      margin-top: 15%; }
       div.container .mail a img {
         display: none; }
   div.container .copy {
@@ -434,7 +437,10 @@ div.container {
       div.container .mail a {
         max-width: 100%;
         padding-bottom: 0;
-        height: 30%; }
+        width: 85%;
+        margin-left: calc(50% - 42%);
+        height: 15%;
+        margin-top: 30%; }
         div.container .mail a img {
           visibility: hidden;
           max-width: 100%; }
