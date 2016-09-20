@@ -394,7 +394,7 @@ div.container {
     height: 100%; }
     div.container .mail a {
       display: block;
-      border: 1px solid red; }
+      height: 50%; }
       div.container .mail a img {
         display: none; }
   div.container .copy {
